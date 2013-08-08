@@ -1,0 +1,38 @@
+ul.music-list {
+	float: left;
+	display: table-row;
+	margin: -44px 10px 0 0;
+	padding: 0 0 64px 0;
+	width: 870px;
+}
+
+ul.music-list li {
+	float: left;
+	height: 160px;
+	list-style-type: none;
+	margin: 64px 26px 0 0;
+	padding: 0 0 0 0;
+	width: 240px;
+}
+
+ul.music-list li a {
+	font-family: georgia;
+	text-decoration: none;
+}
+
+ul.music-list li img {
+	float: left;
+	margin-right: 5px;
+	width: 100%;
+}
+
+#play-music {
+	background: #E9E9E9;
+	float: left;
+	height: 391px;
+	margin: 0 10px 20px 0;
+	overflow: hidden;
+	position: relative;
+	text-align: left;
+	width: 730px;
+}

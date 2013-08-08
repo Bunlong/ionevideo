@@ -1,0 +1,6 @@
+= simple_form_for singer, :url => admin_singers_path, :class => 'form-horizontal', :html => { :multipart => true } do |f|
+	= f.input :photo, :as => :file
+	= f.input :name
+	= f.input :gender, collection: [:Male, :Female]
+	= f.submit :class => "btn btn-success"
+	= link_to "Cancel", :back, :class => "btn"

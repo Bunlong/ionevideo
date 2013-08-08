@@ -1,0 +1,6 @@
+.row
+	.span12
+		%p.pull-right
+			= link_to new_admin_singer_path, :class => "btn btn-success" do
+				%i.icon-plus-sign &nbsp; Add new Singer
+= render :partial => 'singer_list', :locals => {:singers => @singers} 

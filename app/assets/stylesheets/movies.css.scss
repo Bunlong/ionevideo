@@ -1,0 +1,37 @@
+ul.movie-list {
+	float: left;
+	display: table-row;
+	margin: -44px 10px 0 0;
+	padding: 0 0 64px 0;
+	width: 269px;
+}
+
+ul.movie-list li {
+	float: left;
+	height: 160px;
+	list-style-type: none;
+	margin: 64px 26px 0 0;
+	padding: 0 0 0 0;
+	width: 240px;
+}
+
+ul.movie-list li a {
+	font-family: georgia;
+	text-decoration: none;
+}
+
+ul.movie-list li img {
+	float: left;
+	margin-right: 5px;
+	width: 100%;
+}
+
+#play-movie {
+	background: #E9E9E9;
+	float: left;
+	height: 391px;
+	margin: 0 10px 20px 0;
+	overflow: hidden;
+	text-align: left;
+	width: 730px;
+}

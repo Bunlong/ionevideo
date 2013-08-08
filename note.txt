@@ -1,0 +1,25 @@
+http://developers.facebook.com/docs/reference/javascript/
+
+database==================================
+Singer
+	uuid
+	name
+	gender
+
+Music
+	uuid
+	title
+	url
+	singer_uuid
+	type_uuid
+
+Movie
+	uuid
+	title
+	url
+	type_uuid
+
+Type
+	uuid
+	v_type
+==========================================

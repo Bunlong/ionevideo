@@ -1,0 +1,25 @@
+.row
+	.span12
+		- if singers.present?
+			%table.table.table-bordered
+				%thead
+					%tr
+						%th.span12 Name
+				- singers.each do |singer|
+					%tr
+						%td
+							%table{border: "0"}
+								%tr
+									%td
+										= image_tag singer.photo.url, style: "width: 120px; height: 150px;"
+									%td
+										%table	
+											%tr
+												%td
+													Name: 
+													= singer.name
+											%tr		
+												%td
+													Gender: 
+													= singer.gender
+		= will_paginate singers, :class => "flickr_pagination"

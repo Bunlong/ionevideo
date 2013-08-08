@@ -1,0 +1,12 @@
+.navbar.navbar-inverse.navbar-fixed-top
+	.navbar-inner
+		.container
+			%a.brand#logo-title{:href => "#", style: "color: #fff;"} Admin
+			.nav-collapse.collapse
+				%ul.nav
+					%li
+						= link_to "Singer", admin_singers_path
+					%li
+						= link_to "Music", admin_musics_path
+					%li
+						= link_to "Movie", admin_movies_path

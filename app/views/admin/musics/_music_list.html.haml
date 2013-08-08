@@ -1,0 +1,20 @@
+.row
+	.span12
+		- if musics.present?
+			- no = 1
+			%table.table.table-bordered
+				%thead
+					%tr
+						%th.span1 #
+						%th.span4 Title
+						%th.span7 Music 
+				- musics.each do |music|
+					%tr
+						%td
+							= no
+							- no += 1
+						%td
+							= music.title
+						%td
+							= music.url
+		= will_paginate musics, :class => "flickr_pagination"

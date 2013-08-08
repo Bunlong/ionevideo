@@ -1,0 +1,7 @@
+= simple_form_for music, :url => admin_musics_path, :class => 'form-horizontal' do |f|
+	= f.input :title
+	= f.input :url
+	= f.input :singer_id, :collection => Singer.find(:all).collect{ |s| [s.name,s.id]}, :required=>true
+	= f.input :type_id, :collection => Type.find(:all).collect{ |t| [t.v_type,t.id]}, :required=>true
+	= f.submit :class => "btn btn-success"
+	= link_to "Cancel", :back, :class => "btn"

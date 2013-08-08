@@ -1,0 +1,8 @@
+.row
+	.span12
+		.page-header
+			%h1 Music
+		%p.pull-right
+			= link_to new_admin_music_path, :class => "btn btn-success" do
+				%i.icon-plus-sign &nbsp; Add new Music
+= render :partial => 'music_list', :locals => {:musics => @musics} 

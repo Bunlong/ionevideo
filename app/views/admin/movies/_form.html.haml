@@ -1,0 +1,6 @@
+= simple_form_for movie, :url => admin_movies_path, :class => 'form-horizontal' do |f|
+	= f.input :title
+	= f.input :url
+	= f.input :type_id, :collection => Type.find(:all).collect{ |t| [t.v_type,t.id]}, :required=>true
+	= f.submit :class => "btn btn-success"
+	= link_to "Cancel", :back, :class => "btn"

@@ -1,0 +1,13 @@
+.row
+	.span3
+		.search-bar
+			Khmer Music
+		- @singers.each do |singer|
+			.thumbnail-wrapper
+				.thumbnail.img-type
+					%img{src: "#{singer.photo.url}", class: "img-type"}
+					.caption
+						%p
+							= singer.name
+							%br
+							Songs: 10

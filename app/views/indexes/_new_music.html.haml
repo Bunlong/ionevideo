@@ -1,0 +1,11 @@
+.row
+	.span9
+		.search-bar
+			New Music
+	.span9
+		%ul.music-list
+			- new_musics.each do |music|
+				%li
+					.thumbnail
+						%a{href: "#{music.url}"}
+							= music.title

@@ -1,0 +1,35 @@
+.thumbnail-wrapper {
+	margin: 20px 0 8px 0;
+	.img-type {
+		width: 170px;
+	}
+}
+
+.search-bar {
+	background-color: #E9E9E9;
+	border: 1px solid #DEDEDE;
+	border-radius: 1px 1px 1px 1px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.currentvideo {
+	outline: 1px solid #007EBE;
+}
+
+.footer {
+	background-color: #000000;
+	border-top: 1px solid #E5E5E5;
+	color: #fff;
+	margin-top: 40px;
+	padding: 13px 0 13px 0;
+	text-shadow: 0 -1px #000000;
+}
+
+.search {
+	background-color: #fff;
+	-moz-box-shadow: 1px 3px 5px #ccc;
+	-webkit-box-shadow: 1px 3px 5px #ccc;
+	box-shadow: 1px 3px 5px #ccc;
+}

@@ -1,0 +1,18 @@
+.row
+	.span12
+		- if movies.present?
+			%table.table.table-bordered
+				%thead
+					%tr
+						%th.span1 #
+						%th.span4 Title
+						%th.span7 Movie 
+				- movies.each do |movie|
+					%tr
+						%td
+							1
+						%td
+							= movie.title
+						%td
+							= movie.url
+		= will_paginate movies, :class => "flickr_pagination"

@@ -1,0 +1,2 @@
+module Admin::MusicsHelper
+end
